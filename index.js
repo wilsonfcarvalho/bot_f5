@@ -42,7 +42,7 @@ objRtm.on(objRtmEvents.MESSAGE, function(objMessage) {
 	var arrMsgText = objMessage.text.toLowerCase().split(' ');
 	switch(arrMsgText[0]) {
 		case 'hello':
-			objRtm.sendMessage('Hello <@' + objMessage.user + '> MY BROTHER!!!', objMessage.channel);
+			objRtm.sendMessage('Hello <@' + objMessage.user + '> MY BROTHER NARUTO!!!', objMessage.channel);
 			strChannel = objMessage.channel;
 			break;
 		case 'status':
