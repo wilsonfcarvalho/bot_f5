@@ -25,7 +25,7 @@ F5 [control](https://youtu.be/-nLz8mNx60E) and [logging](https://youtu.be/yNNSSt
 ## Installation
 Please review the [script](install.sh) first!
 
-```bash <(curl -sL https://github.com/ArtiomL/f5-slack-bot/raw/master/install.sh)```
+```bash <(curl -sL https://github.com/wilsonfcarvalho/bot_f5/raw/master/install.sh)```
 
 &nbsp;&nbsp;
 
