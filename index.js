@@ -24,7 +24,7 @@ var objRtmEvents = require('@slack/client').RTM_EVENTS;
 var objClientEvents = require('@slack/client').CLIENT_EVENTS;
 var clsTail = require('tail').Tail;
 
-var strBotToken = process.env.SLACK_BOT_TOKEN || '';
+var strBotToken = process.env.SLACK_BOT_TOKEN || 'xoxb-648964968881-668020934422-n01xHadogZqYmoBXu5RyqazL';
 var strChannel = '';
 var objRtm = new funRtmClient(strBotToken);
 
