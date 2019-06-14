@@ -7,7 +7,7 @@
 
 'use strict';
 
-// Log level to /var/log/f5-slack-bot (or stdout)
+// Log level
 var intLogLevel = 0;
 var strLogID = '[-v1.0.3-171124-]';
 
@@ -24,7 +24,7 @@ var objRtmEvents = require('@slack/client').RTM_EVENTS;
 var objClientEvents = require('@slack/client').CLIENT_EVENTS;
 var clsTail = require('tail').Tail;
 
-var strBotToken = process.env.SLACK_BOT_TOKEN || 'xoxb-648964968881-668020934422-n01xHadogZqYmoBXu5RyqazL';
+var strBotToken = process.env.SLACK_BOT_TOKEN || '';
 var strChannel = '';
 var objRtm = new funRtmClient(strBotToken);
 
@@ -42,7 +42,7 @@ objRtm.on(objRtmEvents.MESSAGE, function(objMessage) {
 	var arrMsgText = objMessage.text.toLowerCase().split(' ');
 	switch(arrMsgText[0]) {
 		case 'hello':
-			objRtm.sendMessage('Hello <@' + objMessage.user + '> MY BROTHER NARUTO!!!', objMessage.channel);
+			objRtm.sendMessage('Hello <@' + objMessage.user + '>MY BROZER naruto!!!', objMessage.channel);
 			strChannel = objMessage.channel;
 			break;
 		case 'status':
